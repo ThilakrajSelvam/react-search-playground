@@ -1,10 +1,14 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-search-playground'
+import { SearchComponentPlayground } from 'react-search-playground'
 import 'react-search-playground/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div className='app_container'>
+      <SearchComponentPlayground url='https://www.breakingbadapi.com/api/characters' />
+    </div>
+  )
 }
 
 export default App
